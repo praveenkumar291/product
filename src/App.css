@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -22,9 +22,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +35,96 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: transparent !important;
+  /* height: 210px; */
+  /* width: 210px; */
+}
+
+.image {
+  align-items: center !important;
+  display: flex;
+  background: transparent !important;
+
+  height: 210px;
+  width: 210px;
+  position: relative;
+  background-color: rgb(243, 243, 164);
+}
+
+.image:hover {
+  border: 1px solid rgb(149, 149, 156);
+}
+.card-icon {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 2rem;
+  visibility: hidden;
+  /* background-color: #b82e2e; */
+  border-color: red;
+  text-align: bottom;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  /* background: #000; */
+}
+.arrow {
+  background-color: black;
+  color: #eee7e8;
+  font-size: 30px;
+  border-radius: 40px;
+}
+.image:hover .card-icon {
+  visibility: visible;
+}
+
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(18, 218, 101, 0.2); */
+
+  /* width: calc(100% / 4.5); */
+  /* display: grid; */
+  grid-template-rows: 4, 1fr 1fr 1fr 1fr;
+  height: 210px;
+  /* background-color: #48474b; */
+  width: 210px;
+  margin: 50px;
+  /* border: 1px solid #000;
+   */
+  /* box-sizing: border-box; */
+  /* box-shadow: 20px white; */
+  position: relative;
+  background-color: rgb(224, 190, 147);
+}
+
+.card:hover {
+  /* box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.2); */
+  background: transparent !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: center;
+  font-size: 13px;
+
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+.card {
+  /* border-style: none !important; */
+  background: transparent !important;
+}
+.price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
